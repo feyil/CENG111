@@ -1,0 +1,10 @@
+org 0a0h
+db 1,2
+org 20h
+load r1,[0a0h]
+load r2,[0a1h]
+addi r3,r1,r2
+load r9,30h
+addi r3,r3,r9
+store r3,[0d0h]
+load rf,[0d0h]

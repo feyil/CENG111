@@ -1,0 +1,11 @@
+db 15,4
+org 20h
+load r1,[00h]
+load r2,[01h]
+load r3,0ffh
+load r4,1
+xor r2,r2,r3
+addi r2,r2,r4
+addi r5,r1,r2
+;xor r5,r5,r3
+;addi r5,r5,r4
